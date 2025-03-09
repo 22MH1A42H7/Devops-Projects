@@ -6,7 +6,7 @@ This project demonstrates the creation of a *CICD (Continuous Integration and Co
 
 ### Terraform Init
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/terraform-1.jpg" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/terraform-1.jpg" width="600" height="350">
 </p>
 
 ****Description:****
@@ -17,7 +17,7 @@ This step ensures Terraform is ready to create and manage the infrastructure def
 
 ### Terraform Plan
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/tf-2.jpg" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/tf-2.jpg" width="600" height="350">
 </p>
 
 ****Description:****
@@ -28,7 +28,7 @@ This step helps verify the configuration before applying any changes, ensuring n
 
 ### Terraform Apply
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -41,7 +41,7 @@ This step provisions the infrastructure, including EC2 instances, VPC, subnets, 
 
 ### EC2 Instances   3233232
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(50).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(50).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -56,7 +56,7 @@ These instances form the backbone of the CICD pipeline, hosting Docker and Jenki
 
 ### VPC & Components
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(51).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(51).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -67,7 +67,7 @@ The VPC provides an isolated network environment for the EC2 instances, ensuring
 
 ### Security Group
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(53).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(53).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -78,7 +78,7 @@ Security groups act as virtual firewalls, ensuring only authorized traffic can a
 
 ### Key Pair
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(54).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(54).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -91,7 +91,7 @@ The key pair ensures secure SSH access to the instances without using passwords.
 
 ### Inventory File
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(55).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(55).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -106,7 +106,7 @@ The inventory file is essential for Ansible to know which servers to manage.
 
 ### Install Docker
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -117,7 +117,7 @@ Docker is required to containerize and deploy applications.
 
 ### Install Jenkins
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -135,7 +135,7 @@ Jenkins automates the CICD pipeline, enabling continuous integration and deploym
 
 ### Jenkins Access
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -146,7 +146,7 @@ This step ensures Jenkins is properly installed and accessible.
 
 ### Plugin Installation
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -157,7 +157,7 @@ Plugins extend Jenkins functionality, enabling integration with Docker, Git, and
 
 ### Pipeline Creation
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
 </p>
 ****Description:****
 A pipeline named *AutoDeploy Pipeline* was created. The Groovy script for the pipeline was written, applied, and saved.
@@ -167,7 +167,7 @@ The pipeline automates the build, test, and deployment process.
 
 ### Build Pipeline
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -180,7 +180,7 @@ This step verifies that the pipeline is working as expected.
 
 ### Docker Access
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -191,7 +191,7 @@ Ensures Docker is running and accessible for deploying applications.
 
 ### Docker Image Build
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -202,7 +202,7 @@ Ensures the application is containerized and ready for deployment.
 
 ### Docker Swarm Replicas
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
 </p>
 
 ****Description:****
