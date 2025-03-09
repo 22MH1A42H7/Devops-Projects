@@ -27,7 +27,9 @@ The terraform plan command provides an execution plan, showing what resources wi
 This step helps verify the configuration before applying any changes, ensuring no unintended modifications are made.
 
 ### Terraform Apply
-*Screenshot:* terraform_apply.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 The terraform apply command creates the actual resources in AWS as defined in the Terraform configuration.
@@ -37,8 +39,10 @@ This step provisions the infrastructure, including EC2 instances, VPC, subnets, 
 
 ## 2. Resources Created by Terraform
 
-### EC2 Instances
-*Screenshot:* ec2_instances.png
+### EC2 Instances   3233232
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(50).png" width="600" height="300">
+</p>
 
 *Description:*
 Two EC2 instances were created:
@@ -51,7 +55,9 @@ The screenshot shows their public IPs, instance types, and statuses.
 These instances form the backbone of the CICD pipeline, hosting Docker and Jenkins.
 
 ### VPC & Components
-*Screenshot:* vpc_resource_map.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 A *Virtual Private Cloud (VPC)* named my_vpc was created, along with a route table, internet gateway, and subnet.
@@ -60,7 +66,9 @@ A *Virtual Private Cloud (VPC)* named my_vpc was created, along with a route tab
 The VPC provides an isolated network environment for the EC2 instances, ensuring secure communication.
 
 ### Security Group
-*Screenshot:* security_group.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 A *security group* was created to control inbound and outbound traffic for the EC2 instances.
@@ -69,7 +77,9 @@ A *security group* was created to control inbound and outbound traffic for the E
 Security groups act as virtual firewalls, ensuring only authorized traffic can access the instances.
 
 ### Key Pair
-*Screenshot:* key_pair.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 A *key pair* named CICD.pem was generated and downloaded for SSH access to the EC2 instances.
@@ -80,7 +90,9 @@ The key pair ensures secure SSH access to the instances without using passwords.
 ## 3. Ansible Setup
 
 ### Inventory File
-*Screenshot:* inventory_ini.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 The inventory.ini file defines the target servers (EC2 instances) for Ansible. The command below was used to ping the servers and verify connectivity:
@@ -93,7 +105,9 @@ ansible all -m ping -i inventory.ini
 The inventory file is essential for Ansible to know which servers to manage.
 
 ### Install Docker
-*Screenshot:* install_docker.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 The docker_install.yml playbook was executed to install Docker on the target servers.
@@ -102,7 +116,9 @@ The docker_install.yml playbook was executed to install Docker on the target ser
 Docker is required to containerize and deploy applications.
 
 ### Install Jenkins
-*Screenshot:* install_jenkins.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 The jenkins_install.yml playbook was executed to install Jenkins on the jenkins server instance.
@@ -118,7 +134,9 @@ Jenkins automates the CICD pipeline, enabling continuous integration and deploym
 ## 4. Jenkins Setup
 
 ### Jenkins Access
-*Screenshot:* jenkins_access.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 Jenkins was accessed via the browser using the public IP of the jenkins server instance on port 8080. The admin password was retrieved and entered to unlock Jenkins.
@@ -127,7 +145,9 @@ Jenkins was accessed via the browser using the public IP of the jenkins server i
 This step ensures Jenkins is properly installed and accessible.
 
 ### Plugin Installation
-*Screenshot:* jenkins_plugins.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 Required plugins (*Docker, Pipeline, Git*) were installed on Jenkins.
@@ -136,8 +156,9 @@ Required plugins (*Docker, Pipeline, Git*) were installed on Jenkins.
 Plugins extend Jenkins functionality, enabling integration with Docker, Git, and other tools.
 
 ### Pipeline Creation
-*Screenshot:* jenkins_pipeline.png
-
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 *Description:*
 A pipeline named *AutoDeploy Pipeline* was created. The Groovy script for the pipeline was written, applied, and saved.
 
@@ -145,7 +166,9 @@ A pipeline named *AutoDeploy Pipeline* was created. The Groovy script for the pi
 The pipeline automates the build, test, and deployment process.
 
 ### Build Pipeline
-*Screenshot:* jenkins_build.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 The pipeline was executed by clicking *Build Now*, and it ran successfully.
@@ -156,7 +179,9 @@ This step verifies that the pipeline is working as expected.
 ## 5. Docker Setup
 
 ### Docker Access
-*Screenshot:* docker_access.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 Verified that Docker is accessible on port 80 using the public IP of the docker server instance.
@@ -165,7 +190,9 @@ Verified that Docker is accessible on port 80 using the public IP of the docker 
 Ensures Docker is running and accessible for deploying applications.
 
 ### Docker Image Build
-*Screenshot:* docker_image.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 Checked the Docker account to confirm that the image was built successfully.
@@ -174,7 +201,9 @@ Checked the Docker account to confirm that the image was built successfully.
 Ensures the application is containerized and ready for deployment.
 
 ### Docker Swarm Replicas
-*Screenshot:* docker_swarm.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+</p>
 
 *Description:*
 Verified the replicas created using Docker Swarm with the command:
