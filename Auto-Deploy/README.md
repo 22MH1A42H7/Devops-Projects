@@ -39,7 +39,7 @@ This step provisions the infrastructure, including EC2 instances, VPC, subnets, 
 
 ## 2. Resources Created by Terraform
 
-### EC2 Instances   3233232
+### EC2 Instances  
 *Screenshot:* <p align="center">
   <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(50).png" width="600" height="350">
 </p>
@@ -157,7 +157,7 @@ Plugins extend Jenkins functionality, enabling integration with Docker, Git, and
 
 ### Adding Credentials in Jenkins  
 ****Navigating to Jenkins Credentials****  
-<p align="center">
+*Screenshot: <p align="center">
   <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(63).png" width="600" height="350">
 </p>
 
@@ -167,7 +167,7 @@ Navigate to **Manage Jenkins → Credentials → Global Credentials** to add req
 ---
 
 ****Docker & SSH Credentials in Jenkins**** 
-<p align="center">
+*Screenshot: <p align="center">
   <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(64).png" width="600" height="350">
 </p>
 
@@ -242,3 +242,12 @@ Ensures the application is running in a highly available and scalable manner.
 
 ## Conclusion
 This project successfully demonstrates the automation of *infrastructure provisioning using Terraform, **configuration management using Ansible, and **CICD pipeline setup using Jenkins and Docker*. The pipeline ensures seamless integration and deployment of applications.
+
+## Author
+
+****Satya Praveen M****  
+Cloud and Devops Enthusiast  
+- **LinkedIn**: [https://www.linkedin.com/in/Satya Praveen M](https://www.linkedin.com/in/satya-praveen-m-36442725b/)  
+- **GitHub**: [https://github.com/Satya Praveen M](https://github.com/22MH1A42H7)  
+
+---
