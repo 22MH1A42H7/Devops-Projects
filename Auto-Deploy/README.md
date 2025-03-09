@@ -156,7 +156,7 @@ Required plugins (*Docker, Pipeline, Git*) were installed on Jenkins.
 Plugins extend Jenkins functionality, enabling integration with Docker, Git, and other tools.
 
 ### Adding Credentials in Jenkins  
-****Navigating to Jenkins Credentials****  
+###Navigating to Jenkins Credentials
 *Screenshot:* <p align="center">
   <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(63).png" width="600" height="350">
 </p>
@@ -166,7 +166,7 @@ Navigate to **Manage Jenkins → Credentials → Global Credentials** to add req
 
 ---
 
-****Docker & SSH Credentials in Jenkins**** 
+###Docker & SSH Credentials in Jenkins
 *Screenshot:* <p align="center">
   <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(64).png" width="600" height="350">
 </p>
