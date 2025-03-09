@@ -16,7 +16,9 @@ The terraform init command initializes the working directory and downloads the n
 This step ensures Terraform is ready to create and manage the infrastructure defined in the configuration files.
 
 ### Terraform Plan
-*Screenshot:* terraform_plan.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/tf-2.jpg" width="600" height="300">
+</p>
 
 *Description:*
 The terraform plan command provides an execution plan, showing what resources will be created, updated, or deleted.
