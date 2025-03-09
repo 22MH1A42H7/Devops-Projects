@@ -5,7 +5,9 @@ This project demonstrates the creation of a *CICD (Continuous Integration and Co
 ## 1. Terraform Setup
 
 ### Terraform Init
-*Screenshot:* terraform_init.png
+*Screenshot:* <p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/terraform-1.jpg" width="650" height="300">
+</p>
 
 *Description:*
 The terraform init command initializes the working directory and downloads the necessary provider plugins (e.g., AWS provider) to manage the resources.
