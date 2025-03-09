@@ -6,10 +6,10 @@ This project demonstrates the creation of a *CICD (Continuous Integration and Co
 
 ### Terraform Init
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/terraform-1.jpg" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/terraform-1.jpg" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 The terraform init command initializes the working directory and downloads the necessary provider plugins (e.g., AWS provider) to manage the resources.
 
 *Why it’s important:*
@@ -17,10 +17,10 @@ This step ensures Terraform is ready to create and manage the infrastructure def
 
 ### Terraform Plan
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/tf-2.jpg" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/tf-2.jpg" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 The terraform plan command provides an execution plan, showing what resources will be created, updated, or deleted.
 
 *Why it’s important:*
@@ -28,10 +28,10 @@ This step helps verify the configuration before applying any changes, ensuring n
 
 ### Terraform Apply
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 The terraform apply command creates the actual resources in AWS as defined in the Terraform configuration.
 
 *Why it’s important:*
@@ -41,10 +41,10 @@ This step provisions the infrastructure, including EC2 instances, VPC, subnets, 
 
 ### EC2 Instances   3233232
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(50).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(50).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 Two EC2 instances were created:
 - *docker server*: Hosts Docker for containerized applications.
 - *jenkins server*: Hosts Jenkins for the CICD pipeline.
@@ -56,10 +56,10 @@ These instances form the backbone of the CICD pipeline, hosting Docker and Jenki
 
 ### VPC & Components
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(51).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 A *Virtual Private Cloud (VPC)* named my_vpc was created, along with a route table, internet gateway, and subnet.
 
 *Why it’s important:*
@@ -67,10 +67,10 @@ The VPC provides an isolated network environment for the EC2 instances, ensuring
 
 ### Security Group
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(53).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 A *security group* was created to control inbound and outbound traffic for the EC2 instances.
 
 *Why it’s important:*
@@ -78,10 +78,10 @@ Security groups act as virtual firewalls, ensuring only authorized traffic can a
 
 ### Key Pair
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 A *key pair* named CICD.pem was generated and downloaded for SSH access to the EC2 instances.
 
 *Why it’s important:*
@@ -91,10 +91,10 @@ The key pair ensures secure SSH access to the instances without using passwords.
 
 ### Inventory File
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 The inventory.ini file defines the target servers (EC2 instances) for Ansible. The command below was used to ping the servers and verify connectivity:
 
 ```bash
@@ -106,10 +106,10 @@ The inventory file is essential for Ansible to know which servers to manage.
 
 ### Install Docker
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 The docker_install.yml playbook was executed to install Docker on the target servers.
 
 *Why it’s important:*
@@ -117,10 +117,10 @@ Docker is required to containerize and deploy applications.
 
 ### Install Jenkins
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 The jenkins_install.yml playbook was executed to install Jenkins on the jenkins server instance.
 
 #### Steps in the playbook:
@@ -135,10 +135,10 @@ Jenkins automates the CICD pipeline, enabling continuous integration and deploym
 
 ### Jenkins Access
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 Jenkins was accessed via the browser using the public IP of the jenkins server instance on port 8080. The admin password was retrieved and entered to unlock Jenkins.
 
 *Why it’s important:*
@@ -146,10 +146,10 @@ This step ensures Jenkins is properly installed and accessible.
 
 ### Plugin Installation
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 Required plugins (*Docker, Pipeline, Git*) were installed on Jenkins.
 
 *Why it’s important:*
@@ -157,9 +157,9 @@ Plugins extend Jenkins functionality, enabling integration with Docker, Git, and
 
 ### Pipeline Creation
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
 </p>
-*Description:*
+**Description:**
 A pipeline named *AutoDeploy Pipeline* was created. The Groovy script for the pipeline was written, applied, and saved.
 
 *Why it’s important:*
@@ -167,10 +167,10 @@ The pipeline automates the build, test, and deployment process.
 
 ### Build Pipeline
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 The pipeline was executed by clicking *Build Now*, and it ran successfully.
 
 *Why it’s important:*
@@ -180,10 +180,10 @@ This step verifies that the pipeline is working as expected.
 
 ### Docker Access
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 Verified that Docker is accessible on port 80 using the public IP of the docker server instance.
 
 *Why it’s important:*
@@ -191,10 +191,10 @@ Ensures Docker is running and accessible for deploying applications.
 
 ### Docker Image Build
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 Checked the Docker account to confirm that the image was built successfully.
 
 *Why it’s important:*
@@ -202,10 +202,10 @@ Ensures the application is containerized and ready for deployment.
 
 ### Docker Swarm Replicas
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="325">
 </p>
 
-*Description:*
+**Description:**
 Verified the replicas created using Docker Swarm with the command:
 
 ```bash
