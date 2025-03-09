@@ -91,7 +91,7 @@ The key pair ensures secure SSH access to the instances without using passwords.
 
 ### Inventory File
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(55).png" width="600" height="350">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(56).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -106,7 +106,7 @@ The inventory file is essential for Ansible to know which servers to manage.
 
 ### Install Docker
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(57).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -117,7 +117,7 @@ Docker is required to containerize and deploy applications.
 
 ### Install Jenkins
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(58).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -135,7 +135,7 @@ Jenkins automates the CICD pipeline, enabling continuous integration and deploym
 
 ### Jenkins Access
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(59).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -146,7 +146,7 @@ This step ensures Jenkins is properly installed and accessible.
 
 ### Plugin Installation
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(61).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -155,19 +155,44 @@ Required plugins (*Docker, Pipeline, Git*) were installed on Jenkins.
 ****Why it’s important:****
 Plugins extend Jenkins functionality, enabling integration with Docker, Git, and other tools.
 
+### Adding Credentials in Jenkins  
+****Navigating to Jenkins Credentials****  
+<p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(63).png" width="600" height="350">
+</p>
+
+****Description:****  
+Navigate to **Manage Jenkins → Credentials → Global Credentials** to add required credentials.
+
+---
+
+****Docker & SSH Credentials in Jenkins**** 
+<p align="center">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(64).png" width="600" height="350">
+</p>
+
+****Description:****  
+- **Docker Hub credentials** were added to enable Jenkins to push/pull images securely.  
+- **PEM key file (CICD.pem)** was added as a **SSH-pem key** to allow SSH access to AWS EC2 instances.  
+
+****Why it’s important:****  
+- Jenkins needs **Docker Hub authentication** to interact securely with container registries.  
+- The **PEM key file** ensures secure SSH access for deployment tasks on AWS.  
+
+
 ### Pipeline Creation
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(66).png" width="600" height="350">
 </p>
 ****Description:****
-A pipeline named *AutoDeploy Pipeline* was created. The Groovy script for the pipeline was written, applied, and saved.
+A pipeline named *Auto-Deploy Pipeline* was created. The Groovy script for the pipeline was written, applied, and saved.
 
 ****Why it’s important:****
 The pipeline automates the build, test, and deployment process.
 
 ### Build Pipeline
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(67).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -180,7 +205,7 @@ This step verifies that the pipeline is working as expected.
 
 ### Docker Access
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(68).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -191,7 +216,7 @@ Ensures Docker is running and accessible for deploying applications.
 
 ### Docker Image Build
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(71).png" width="600" height="350">
 </p>
 
 ****Description:****
@@ -202,7 +227,7 @@ Ensures the application is containerized and ready for deployment.
 
 ### Docker Swarm Replicas
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(49).png" width="600" height="350">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/Screenshot%20(70).png" width="600" height="350">
 </p>
 
 ****Description:****
