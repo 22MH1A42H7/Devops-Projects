@@ -6,7 +6,7 @@ This project demonstrates the creation of a *CICD (Continuous Integration and Co
 
 ### Terraform Init
 *Screenshot:* <p align="center">
-  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/terraform-1.jpg" width="650" height="300">
+  <img src="https://github.com/22MH1A42H7/Devops-Projects/blob/main/Auto-Deploy/Snapshots/terraform-1.jpg" width="600" height="300">
 </p>
 
 *Description:*
